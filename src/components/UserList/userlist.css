@@ -1,0 +1,33 @@
+.userlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.userlist .userlist_icon {
+    cursor: pointer;
+    font-size: 32px;
+}
+.userlist__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.userlist__header {
+    display: flex;
+    justify-content: flex-start;
+    margin-inline: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .userlist__header {
+        justify-content: flex-end;
+        margin: 8px 0;
+    }
+    .userlist__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 72px;
+    padding-inline: min(5%, 40px);
+
+}
+
+.header img {
+    height: 48px;
+
+}
+
+.header .header__site-name {
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header img {
+        height: 32px;
+    }
+
+    .header .header__site-name {
+        font-size: 18px;
+    }
+}
